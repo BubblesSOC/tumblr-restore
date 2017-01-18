@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='Tumblr Restore',
@@ -7,7 +7,7 @@ setup(
     author='Bubs',
     author_email='bubblessoc@gmail.com',
     url='https://github.com/bubblessoc/tumblr-restore',
-    packages=find_packages(),
+    py_modules=['tumblr_restore'],
     install_requires=['pytumblr'],
     tests_require=['nose'],
     test_suite='nose.collector',
