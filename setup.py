@@ -7,11 +7,12 @@ setup(
     author='Bubs',
     author_email='bubblessoc@gmail.com',
     url='https://github.com/bubblessoc/tumblr-restore',
-    py_modules=['tumblr_restore'],
+    packages=['tumblr_restore'],
     install_requires=['pytumblr'],
-    tests_require=['nose'],
     test_suite='nose.collector',
+    tests_require=['nose'],
     entry_points = {
-        'console_scripts': ['tumblr-restore=tumblr_restore:main']
-    }
+        'console_scripts': ['tumblr-restore=tumblr_restore.command_line:main']
+    },
+    include_package_data=True
 )
