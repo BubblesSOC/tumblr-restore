@@ -8,7 +8,7 @@ setup(
     author_email='bubblessoc@gmail.com',
     url='https://github.com/bubblessoc/tumblr-restore',
     packages=['tumblr_restore'],
-    install_requires=['pytumblr'],
+    install_requires=['oauth2','pytumblr'],
     test_suite='nose.collector',
     tests_require=['nose'],
     entry_points = {
